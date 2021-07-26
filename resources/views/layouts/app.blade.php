@@ -8,9 +8,15 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
           <link rel="stylesheet" href="/app.css">
 
+
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-      <link href='https://fonts.googleapis.com/css?family=lato|ABeeZee|Arail|Bree Serif|Baloo|Bitter|poppins' rel='stylesheet'>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -54,6 +60,7 @@
                   <p>
                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
+
                       <a href="{{ route('logout') }}" class="text-sm text-gray-700 float-right mr-3">Logout</a>
                   </form>
                 @else
