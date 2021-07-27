@@ -2,7 +2,7 @@
 @section('content')
 
     <div class="form-content">
-        <form method="POST" action="{{ route('home') }}">
+        <form method="POST" action="{{ route('login') }}">
                 @csrf
 
             <div class="row">

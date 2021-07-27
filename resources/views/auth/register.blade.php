@@ -4,7 +4,7 @@
 
 
     <div class="form-content">
-      <form method="POST" action="{{ route('home') }}">
+      <form method="POST" action="{{ route('register') }}">
           @csrf
 
             <div class="row">
@@ -48,7 +48,7 @@
                                       name="password_confirmation" required />
                     </div>
                 </div>
-                <!-- <div class="col-md-6">
+                <div class="col-md-6">
                     <div class="form-group">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                     {{ __('Already registered?') }}
@@ -58,7 +58,7 @@
                     {{ __('Login') }}
                 </button>
               </div>
-              </div> -->
+              </div>
             </div>
             <input type="submit" value="Sign Up">
           </form>

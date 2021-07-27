@@ -54,24 +54,45 @@
       <!-- <h3><a href="#"><i class="fa fa-fw fa-user"></i></a></h3> -->
 
       <div class="dropdown">
-        @if (Route::has('login'))
+
+              <div class="form mb-1">
+                  <div class="note">
+
+                        @if (Auth::check())
+
+                          <a href="{{ route('logout') }}" class="text-sm text-gray-700 float-right mr-3" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">Logout</a>
+                        @else
+                            <a href="{{ route('login') }}" class="text-sm text-gray-700 float-right mr-3">Login</a>
+                        @endif
+                      </p>
+                  </div>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+
+                     @if (Route::has('register'))
+                       <a href="{{ route('register') }}" class="text-sm text-gray-700 float-right mr-3">SignUp</a>
+                     @endif
+              </div>
+        <!-- @if (Route::has('login'))
 
               @auth
                   <p>
-                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                   <form id="logout-form" action="{{ route('logout') }}" method="POST" >
                     @csrf
 
                       <a href="{{ route('logout') }}" class="text-sm text-gray-700 float-right mr-3">Logout</a>
                   </form>
                 @else
                      <a href="{{ route('login') }}" class="text-sm text-gray-700 float-right mr-3">Login</a>
-
+               @endif
                   @if (Route::has('register'))
                     <a href="{{ route('register') }}" class="text-sm text-gray-700 float-right mr-3">SignUp</a>
                   @endif
                 </p>
-            @endauth
-      @endif
+            @endauth -->
+
       </div>
 
 
