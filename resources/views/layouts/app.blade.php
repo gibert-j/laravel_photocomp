@@ -8,6 +8,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
           <link rel="stylesheet" href="/app.css">
 
+       <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
           <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
   <nav class="navbar navbar-expand-lg">
     <!-- Brand -->
     <div class="logo">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+      <a class="navbar-brand" href="{{ route('home') }}"><img src="images/logo.png" alt="logo"></a>
     </div>
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler bg-primary navbar-dark" type="button" data-toggle="collapse"
@@ -39,7 +40,7 @@
     <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Photo Contest</a>
+          <a class="nav-link" href="{{ route('home') }}">Photo Contest</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About Competition</a>
@@ -50,31 +51,35 @@
         <li class="nav-item">
           <a class="nav-link" href="rewards.html">View Rewards</a>
         </li>
+
+
+                  @if (Auth::check())
+                    <li class="nav-item">
+                    <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">Logout</a>
+                      </li>
+                  @else
+                  <li class="nav-item">
+                      <a href="{{ route('login') }}" class="nav-link">Login</a>
+                      </li>
+                  @endif
+
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+               @if (Route::has('register'))
+               <li class="nav-item">
+                 <a href="{{ route('register') }}" class="nav-link">SignUp</a>
+                 </li>
+               @endif
+
       </ul>
       <!-- <h3><a href="#"><i class="fa fa-fw fa-user"></i></a></h3> -->
 
-      <div class="dropdown">
 
-              <div class="form mb-1">
-                  <div class="note">
 
-                        @if (Auth::check())
 
-                          <a href="{{ route('logout') }}" class="text-sm text-gray-700 float-right mr-3" onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">Logout</a>
-                        @else
-                            <a href="{{ route('login') }}" class="text-sm text-gray-700 float-right mr-3">Login</a>
-                        @endif
-                      </p>
-                  </div>
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                  </form>
-
-                     @if (Route::has('register'))
-                       <a href="{{ route('register') }}" class="text-sm text-gray-700 float-right mr-3">SignUp</a>
-                     @endif
-              </div>
         <!-- @if (Route::has('login'))
 
               @auth
@@ -93,50 +98,19 @@
                 </p>
             @endauth -->
 
-      </div>
-
-
-      <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <form class="modal-content" action="/action_page.php">
-        <div class="container">
-          <h1>Sign Up</h1>
-          <p>Please fill in this form to create an account.</p>
-          <hr>
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-          </label>
-
-          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
-          </div>
-        </div>
-      </form>
-
-    </div>
 
   </div>
   </nav>
 
 </div>
-<div class="">
+
+<div class="container-fluid">
+
+        @yield('content')
 
 </div>
-<br> <br> <br> <br> <br>
-        @yield('content')
-</div>
+
+
         <footer>
             <div class="footer">
               <div class="foot py-5">
@@ -152,7 +126,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-12 text-white">
                   <h4>Main Menu</h4>
-                  <a href="index.html"> > Home</a> <br>
+                  <a href="{{ route('home') }}"> > Home</a> <br>
                   <a href="about.html"> > About us</a> <br>
                   <a href="gallery.html"> > Our Gallery</a> <br>
                   <a href="rewards.html"> > View Rewards</a>
