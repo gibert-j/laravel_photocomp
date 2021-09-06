@@ -39,41 +39,53 @@
     <!-- Navbar links -->
     <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('home') }}">Photo Contest</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Competition</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="rewards.html">View Rewards</a>
-        </li>
+        
 
 
                   @if (Auth::check())
-                    <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}">Photo Contest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('about') }}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('rewards') }}">View Rewards</a>
+                  </li>
+                  <li class="nav-item">
                     <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">Logout</a>
-                      </li>
+                      document.getElementById('logout-form').submit();">Log Out</a>
+                  </li>
                   @else
                   <li class="nav-item">
-                      <a href="{{ route('login') }}" class="nav-link">Login</a>
-                      </li>
+                    <a class="nav-link" href="{{ route('home') }}">Photo Contest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('about') }}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('rewards') }}">View Rewards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{ route('login') }}" class="nav-link">Login</a>
+                  </li>
+                  @if (Route::has('register'))
+               <li class="nav-item">
+                 <a href="{{ route('register') }}" class="nav-link">Sign Up</a>
+                 </li>
+                  @endif
                   @endif
 
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>
-               @if (Route::has('register'))
-               <li class="nav-item">
-                 <a href="{{ route('register') }}" class="nav-link">SignUp</a>
-                 </li>
-               @endif
-
       </ul>
       <!-- <h3><a href="#"><i class="fa fa-fw fa-user"></i></a></h3> -->
 

@@ -41,7 +41,7 @@ a.navbar-brand{
 }
 
 .footer{
-    width: 110%;
+    width: 100%;
     background-color: rgb(12 12 12);
     margin-top: 30px;
 }
@@ -132,7 +132,7 @@ a.navbar-brand{
  background-size: cover;
  position: relative;
  padding: 25vh 0px;
- margin-top: 98px;
+ margin-top: 105px;
  text-align: center;
  z-index: 1;
 }
@@ -228,3 +228,6 @@ a.navbar-brand{
       .dropdown:hover .dropdown-content {display: block;}
 
       .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+
