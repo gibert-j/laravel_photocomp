@@ -18,18 +18,18 @@ class HomeController extends Controller
                 'username' => 'required',
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:8'
-                
+
             ], [
                 'name.required' => 'Name is required',
                 'username.required' => 'Username is required',
                 'password.required' => 'Password is required'
             ]);
-  
+
         $validatedData['password'] = bcrypt($validatedData['password']);
         $user = User::create($validatedData);
-      
+
         return back()->with('success', 'User created successfully.');
-        
+
     }
 
     public function customLogin(Request $request)
@@ -38,13 +38,13 @@ class HomeController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
-   
+
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
             return redirect()->intended('dashboard')
                         ->withSuccess('Signed in');
         }
-  
+
         return redirect("login")->withSuccess('Login details are not valid');
     }
 
