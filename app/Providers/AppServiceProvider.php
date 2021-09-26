@@ -23,8 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // view()->composer(['/', 'photoUpload/photo-upload-confirmation'], function ($view) {
-        //
-        // })
+
+        
     }
 }

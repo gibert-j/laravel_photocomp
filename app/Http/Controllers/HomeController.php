@@ -3,12 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Competition;
+use App\Models\Entry;
+use App\Models\User;
 
 class HomeController extends Controller
 {
     public function index()
     {
-      return view('home/index');
+      $competitions=Competition::all();
+
+      return view('home/index', ['competitions'=>$competitions]);
     }
 
     public function store(Request $request)
@@ -48,8 +53,12 @@ class HomeController extends Controller
         return redirect("login")->withSuccess('Login details are not valid');
     }
 
-    public function gallery(){
-        return view('home/gallery');
+    public function gallery()
+    {
+        $entries=Entry::all();
+        $competitions=Competition::all();
+
+        return view('home/gallery', ['entries'=>$entries, 'competitions'=>$competitions]);
       }
       public function Landscapes(){
         return view('home/Landscapes');

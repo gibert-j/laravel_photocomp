@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 
@@ -31,6 +31,8 @@ Route::get('/Landscapes', 'App\Http\Controllers\HomeController@Landscapes') ->na
 Route::get('/portrait', 'App\Http\Controllers\HomeController@portrait') ->name('portrait');
 Route::get('/Sports', 'App\Http\Controllers\HomeController@Sports') ->name('Sports');
 
-Route::GET('/upload', 'App\Http\Controllers\PhotoUploadController@upload') ->name('upload')->middleware('auth');
-Route::POST('/upload', 'App\Http\Controllers\PhotoUploadController@store') ->name('upload');
-Route::GET('/upload/thanks-message', 'App\Http\Controllers\PhotoUploadController@thanksmessage') ->name('thanksmessage');
+
+Route::resource('entries', EntryController::class)->middleware('auth');
+
+Route::resource('competitions', CompetitionController::class)->except(['show'])->middleware(['auth', 'verified']);
+Route::resource('competitions', CompetitionController::class)->only(['show']);

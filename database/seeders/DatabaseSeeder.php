@@ -13,7 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-      \App\Models\User::factory(1)->create(['email' => 'a@a.com', 'username' => 'ma']);
-      \App\Models\User::factory(100)->create();
+      \App\Models\User::factory(1)->create(['email' => 'a@a.com', 'username' => 'ma', 'admin' => 1]);
+      \App\Models\User::factory(5)->create();
+      \App\Models\Competition::factory(7)->create();
+    
     }
 }
