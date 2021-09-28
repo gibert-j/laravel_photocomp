@@ -267,9 +267,9 @@
       </p>
 
       <ul class = "links">
-        <li><a href = "#">What we do</a></li>
+        <li><a href = "{{ route('whatwedo') }}">What we do</a></li>
         <div class = "vertical-line"></div>
-        <li><a href = "#">Contact us</a></li>
+        <li><a href = "{{ route('contact') }}">Contact us</a></li>
       </ul>
       <ul class = "icons">
         <li>
@@ -320,7 +320,7 @@
             <div class="team-content">
               <div class="team-info">
                 <h3>Sanjeev Bardewa</h3>
-                <p>Developer</p>
+                <p>Frontend Developer</p>
               </div>
               <!-- <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi, vel.</p> -->
             </div>

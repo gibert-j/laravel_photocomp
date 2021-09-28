@@ -60,19 +60,19 @@ class HomeController extends Controller
 
         return view('home/gallery', ['entries'=>$entries, 'competitions'=>$competitions]);
       }
-      public function Landscapes(){
-        return view('home/Landscapes');
+
+      public function contact(){
+      return view('home/contact');
       }
-      public function portrait(){
-        return view('home/portrait');
+      public function WhatWeDo(){
+      return view('home/whatwedo');
       }
-      public function Sports(){
-        return view('home/Sports');
-      }
+
 
     public function rewards(){
         return view('home/rewards');
     }
+
     public function about(){
         return view('home/about');
     }

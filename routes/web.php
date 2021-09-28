@@ -27,9 +27,9 @@ Route::get('/about', 'App\Http\Controllers\HomeController@about') ->name('about'
 Route::get('/rewards', 'App\Http\Controllers\HomeController@rewards') ->name('rewards');
 
 Route::get('/gallery', 'App\Http\Controllers\HomeController@gallery') ->name('gallery');
-Route::get('/Landscapes', 'App\Http\Controllers\HomeController@Landscapes') ->name('Landscapes');
-Route::get('/portrait', 'App\Http\Controllers\HomeController@portrait') ->name('portrait');
-Route::get('/Sports', 'App\Http\Controllers\HomeController@Sports') ->name('Sports');
+Route::get('/contact', 'App\Http\Controllers\HomeController@contact') ->name('contact');
+Route::get('/whatwedo', 'App\Http\Controllers\HomeController@whatweDo') ->name('whatwedo');
+
 
 
 Route::resource('entries', EntryController::class)->middleware('auth');

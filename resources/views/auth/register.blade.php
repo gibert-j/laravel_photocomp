@@ -16,7 +16,7 @@
         @endif
       <form method="POST" action="{{ route('register') }}">
           @csrf
-            <div class=" max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-md">           
+            <div class=" max-w-md mx-auto bg-white rounded-lg overflow-hidden md:max-w-md">
                 <div class="md:flex ">
                     <div class="w-full p-3 px-6 py-10">
                       <label for="name" :value="__('Name')" >Full Name</label>
@@ -71,15 +71,15 @@
                          {{ __('Already registered?') }} Login
                         </a>
                     </div>
-                    
+
                     <div class="w-full p-3 px-6 py-10">
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded ml-10" type="submit" value="Sign Up">
                             Sign Up
                         </button>
                     </div>
-                    
-                </div>  
+
+                </div>
         </form>
-        
+
     </div>
 @endsection
