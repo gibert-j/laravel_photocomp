@@ -69,8 +69,7 @@
         <img src="{{$entry->image_path}}" alt="category_Nature">
         <hr>
         <h4>By {{$entry->user->name}}</h4>
-        <br>
-        <h6 class= "content-centre">{{$entry->competition->title}}</h6>
+        <h6>Competition: {{$entry->competition->title}}</h6>
           <!-- <div class="col pb-5">
             <div class="card  mb-3 shadow-sm">
               <div class="carousel-item active ">
