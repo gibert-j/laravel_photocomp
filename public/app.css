@@ -197,7 +197,7 @@ a.navbar-brand{
   padding-left: 10px;
 }
 .col a{
-  background: rgb(24, 87, 155);
+  background: #000;
   justify-content: center;
   font-family: sans-serif;
   width: 50%;
