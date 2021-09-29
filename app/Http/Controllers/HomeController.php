@@ -55,10 +55,11 @@ class HomeController extends Controller
 
     public function gallery()
     {
+
         $entries=Entry::all();
         $competitions=Competition::all();
 
-        return view('home/gallery', ['entries'=>$entries, 'competitions'=>$competitions]);
+        return view('home/gallery', ['entries'=>$entries]);
       }
 
       public function contact(){

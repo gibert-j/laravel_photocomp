@@ -17,4 +17,8 @@ class Entry extends Model
     {
       return $this->belongsTo(User::class);
     }
+    public function competition()
+     {
+       return $this->belongsTo(Competition::class);
+     }
 }

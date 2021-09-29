@@ -13,8 +13,8 @@ class Competition extends Model
      "image_path", "title", "description"
    ];
 
-   public function entryPhoto()
+   public function entry()
     {
-      return $this->belongsTo(EntryPhoto::class);
+      return $this->hasMany(Entry::class);
     }
 }
