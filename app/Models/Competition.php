@@ -15,6 +15,6 @@ class Competition extends Model
 
    public function entryPhoto()
     {
-      return $this->belongsTo(EntryPhoto::class);
+      return $this->hasMany(EntryPhoto::class);
     }
 }
