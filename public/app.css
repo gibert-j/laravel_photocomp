@@ -1,4 +1,6 @@
-
+*{
+  font-family: 'Monda', sans-serif;
+}
 
 .navigation{
     width: 100%;
@@ -106,7 +108,7 @@ a.navbar-brand{
 
     /* Add padding to container elements */
     .container {
-      padding: 10px;
+      padding; 10px;
     }
 
     /* Clear floats */
@@ -176,27 +178,22 @@ a.navbar-brand{
   margin-top: 20px;
 }
 .card{
-  height: 530px;
+  height: auto;
 }
 .carousel-item{
   width: 50%;
 }
 .carousel-item img{
   width: 100%;
-  height: 330px;
+  height: 225px;
   object-fit: cover;
 }
 .caption{
   text-align: center;
 
 }
-.paragraph{
-  border-top: 1px solid;
-  text-align: start;
-  margin: 0 5px 0 5px;
-  padding-left: 10px;
-}
-.col a{
+
+.carousel-item a{
   background: #000;
   justify-content: center;
   font-family: sans-serif;
@@ -204,6 +201,6 @@ a.navbar-brand{
   font-weight: 150;
   color: white;
   border: none;
-  margin: auto auto 10px auto;
+  margin: auto auto 12px auto;
 
 }

@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__.'/auth.php';
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 Route::get('/', 'App\Http\Controllers\HomeController@index') ->name('home');
 Route::POST('/', 'App\Http\Controllers\HomeController@index') ->name('home');
 

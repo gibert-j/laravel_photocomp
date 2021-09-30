@@ -13,21 +13,18 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
       @foreach($competitions as $competition)
       <div class="col pb-5">
-        <div class="card  mb-3 shadow-sm">
+        <div class="card mb-3 ">
           <div class="carousel-item active ">
             <img class="bd-placeholder-img card-img" src="{{$competition->image_path}}">
             <div class="caption pl-3 justify-content-centre">
                <h3>{{$competition->title}}</h3>
             </div>
-          </div>
-        <div class="paragraph">
-          <p>{{$competition->description}}</p>
+          <p class="px-2">{{$competition->description}}</p>
+          <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-success mx-5">Participate Now</a>
         </div>
-          <a href="{{ url('competitions/'.$competition->id) }}" class=" btn btn-primary">Participate Now</a>
       </div>
         </div>
       @endforeach
     </div>
 </div>
-
 @endsection

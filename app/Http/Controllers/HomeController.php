@@ -12,7 +12,6 @@ class HomeController extends Controller
     public function index()
     {
       $competitions=Competition::all();
-
       return view('home/index', ['competitions'=>$competitions]);
     }
 
