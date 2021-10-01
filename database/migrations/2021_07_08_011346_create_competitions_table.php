@@ -18,6 +18,7 @@ class CreateCompetitionsTable extends Migration
             $table->string('image_path');
             $table->text('title');
             $table->text('description');
+            $table->text('time_remaining');
             $table->timestamps();
         });
     }

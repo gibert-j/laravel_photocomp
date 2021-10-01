@@ -11,7 +11,9 @@ class HomeController extends Controller
 {
     public function index()
     {
+
       $competitions=Competition::all();
+      // dd($competitions);
       return view('home/index', ['competitions'=>$competitions]);
     }
 
@@ -55,10 +57,10 @@ class HomeController extends Controller
     public function gallery()
     {
 
-        $entries=Entry::all();
+        $entry=Entry::all();
         $competitions=Competition::all();
 
-        return view('home/gallery', ['entries'=>$entries]);
+        return view('home/gallery', ['entries'=>$entry, 'competitions'=>$competitions]);
       }
 
       public function contact(){

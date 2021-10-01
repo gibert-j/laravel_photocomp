@@ -64,6 +64,7 @@ class CompetitionController extends Controller
            "image_path" => "/competitionCardPhotos/" . $imageName,
            "title" => $request->get('title'),
            "description" =>  $request->get('description'),
+           "time_remaining" =>  $request->get('time_remaining'),
            "user_id" =>  Auth::id()
          ]);
          $competition->save();
@@ -90,7 +91,10 @@ class CompetitionController extends Controller
      */
     public function edit(Competition $competition)
     {
-         return view('competitions.edit',  ['competitions' => $competition]);
+      if (! Gate::allows('admin')) {
+      abort(403);
+     }
+         return view('competitions.edit',  ['competition' => $competition]);
     }
 
     /**
@@ -102,8 +106,12 @@ class CompetitionController extends Controller
      */
     public function update(Request $request, Competition $competition)
     {
-      $competition->update($request->all());
-      return redirect('competitions');
+      if (! Gate::allows('admin')) {
+      abort(403);
+     }
+       $competition->update($request->all());
+       return redirect('competitions');
+
     }
 
     /**
@@ -114,6 +122,9 @@ class CompetitionController extends Controller
      */
     public function destroy(Competition $competition)
     {
+      if (! Gate::allows('admin')) {
+      abort(403);
+       }
       $competition->delete();
       return redirect('competitions');
     }

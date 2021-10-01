@@ -12,6 +12,8 @@
         <input type="text" class="form-control" id="title" name="title" value="" required>
         <label for="description">Description</label>
         <textarea class="form-control" id="description" name="description" rows="10" required></textarea>
+          <label for="competitionTitle">Time Remaining</label>
+        <input type="text" class="form-control" id="time_remaining" name="time_remaining" value="" required>
         <br>
         <input class="btn btn-primary" type="submit" value="Submit">
         <a class="btn btn-warning mx-1" href="competitions">Cancel</a>

@@ -25,9 +25,9 @@
   </div>
   <div class="col px-2 mt-10 ">
     <div class="pl-2">
-      <h5>30 Days Remaining</h5>
+      <h4>{{$competition->time_remaining}}</h4>
       <h6>Judge <a href="#">Manoj Rai</a></h6>
-      <a href="/entries" class="btn btn-success mt-2">Upload Photo</a>
+      <a href="/competitions/{{$competition->id}}/entries/create" class="btn btn-success mt-2">Upload Photo</a>
     </div>
   </div>
   </div>

@@ -16,8 +16,7 @@ class EntryController extends Controller
      */
     public function index()
     {
-      $competitions=Competition::all();
-      return view('entries/entry',['competitions'=>$competitions]);
+
     }
 
     /**
@@ -27,9 +26,9 @@ class EntryController extends Controller
      */
 
 
-    public function create()
+    public function create(Competition $competition)
     {
-        //
+      return view('entries.create',['competition'=>$competition]);
     }
 
     /**
@@ -38,13 +37,13 @@ class EntryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Competition $competition)
     {
-      $entry = Entry::where('user_id',Auth::id())->where('competition_id', $request->get('competition_id') )->count();
-
-      if ($entry > 0){
-        dd('you are a cheater');
-      }
+      // $entry = Entry::where('user_id',Auth::id())->where('competition_id', $request->get('competition_id') )->count();
+      //
+      // if ($entry > 0){
+      //   dd('you are a cheater');
+      // }
 
       $request->validate
       ([
@@ -61,7 +60,7 @@ class EntryController extends Controller
          "name" => $request->get('name'),
          "image_path" => "/entryPhotos/" . $imageName,
          "user_id" =>  Auth::id(),
-         "competition_id" => $request->get('competition_id')
+         "competition_id" => $competition->id,
        ]);
 
       $entry->save();
@@ -86,7 +85,7 @@ class EntryController extends Controller
      * @param  \App\Models\Entry  $entry
      * @return \Illuminate\Http\Response
      */
-    public function edit(Entry $entry)
+    public function edit(Competition $competition, Entry $entry)
     {
         //
     }
