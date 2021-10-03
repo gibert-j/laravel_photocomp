@@ -108,7 +108,7 @@ a.navbar-brand{
 
     /* Add padding to container elements */
     .container {
-      padding; 10px;
+      padding: 10px;
     }
 
     /* Clear floats */
@@ -195,12 +195,37 @@ a.navbar-brand{
 
 .carousel-item a{
   background: #000;
-  justify-content: center;
   font-family: sans-serif;
   width: 50%;
   font-weight: 150;
   color: white;
   border: none;
   margin: auto auto 12px auto;
-
+  display: block;
 }
+
+/*for ipd pro*/
+@media screen and (max-width:1200px) {
+    .middle {
+      padding: 15vh 0;
+    }
+  
+    .text h2 {
+      width: 100%;
+      font-family: Bree Serif;
+      font-size: 35px;
+    }
+  
+  }
+  
+  /*for mobile*/
+  @media screen and (max-width:700px) {
+    .middle {
+      padding: 30vh 0;
+    }
+    .text h2 {
+      width: 100%;
+      font-family: Bree Serif;
+      font-size: 28px;
+    }  
+  }

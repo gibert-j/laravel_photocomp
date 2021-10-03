@@ -48,9 +48,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="{{ route('rewards') }}">View Rewards</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">Log Out</a>
@@ -65,9 +65,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="{{ route('rewards') }}">View Rewards</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a href="{{ route('login') }}" class="nav-link">Login</a>
             </li>

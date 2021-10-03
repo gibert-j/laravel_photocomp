@@ -8,6 +8,7 @@
       <style>
         body{
           background-color: #F5F5F5;
+          overflow: hidden;
         }
         /* Full-width input fields */
         input[type=text], input[type=password] {
@@ -57,7 +58,7 @@
         }
 
         .container {
-          padding: 30px;
+          padding: 10px;
         }
 
         span.psw {
@@ -74,10 +75,10 @@
           top: 0;
           width: 100%; /* Full width */
           height: 100%; /* Full height */
-          overflow: auto; /* Enable scroll if needed */
+          overflow: hidden; /* Enable scroll if needed */
           background-color: rgb(0,0,0); /* Fallback color */
           background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-          padding-top: 60px;
+          margin-top: 60px;
         }
 
         /* Modal Content/Box */
@@ -121,30 +122,49 @@
         }
 
         /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
+        @media screen and (max-width:700px) {
           span.psw {
             display: block;
             float: none;
           }
+          .middle{
+            margin-top: 45px;
+            position:fixed;
+          }
+          .form{
+            margin-top: 105px;
+          }
+          .modal-content {
+            width: 80%;
+          }
           .cancelbtn {
             width: 100%;
+          }
+        }
+
+        /*for ipd pro*/
+        @media screen and (min-width:700px) and (max-width:1000px) {
+          .form{
+            margin-top: 80px;
+          }
+          .modal-content {
+            width: 80%;
           }
         }
       </style>
     </head>
     <body>
       <div class="middle">
-  <div class="container m-auto">
-    <div class="text">
-      <h2>Welcome To PhotoShoot Competition!</h2>
-      <div class="line"></div>
-      <h2>Participate now, Show your Photography Skills, Get Rewarded</h2>
-    </div>
-  </div>
-</div>
+        <div class="container m-auto">
+          <div class="text">
+            <h2>Welcome To PhotoShoot Competition!</h2>
+            <div class="line"></div>
+            <h2>Participate now, Show your Photography Skills, Get Rewarded</h2>
+          </div>
+        </div>
+      </div>
 
   <div id="id02" class="form">
-
     <form class="modal-content animate" action="{{ route('login') }}" method="POST">
     @csrf
       <div class="img1container">

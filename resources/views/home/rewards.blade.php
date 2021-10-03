@@ -61,6 +61,7 @@
     text-align: center;
     box-shadow: none;
     border: 1px solid black;
+    margin: 5px 10px auto 10px;
   }
 
   /* Caption text */

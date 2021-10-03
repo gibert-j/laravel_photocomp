@@ -121,7 +121,6 @@
       width: 100%;
     }
     .image{
-
       object-fit: cover;
       /* height: 100vh; */
     }
@@ -150,8 +149,15 @@
     .icons li i{
       font-size: 15px;
     }
+    .single-team{
+      height: 100%!important;
+    }
   }
-
+    @media only screen and (max-width: 1200px) and (min-width: 700px){
+      .single-team{
+        height: 300px !important;
+      }
+    }
   @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
   @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
   @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
@@ -172,13 +178,13 @@
     z-index: 1;
     overflow: hidden;
     box-shadow:5px 5px 15px #000;
+    height: 400px;
   }
 
   .team-img{
     position: relative;
     z-index: 5;
     overflow: hidden;
-    height: 300px;
   }
   .team-img img{
     width: 100%;
@@ -289,18 +295,19 @@
   </section>
   <div class="team-area">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="txt-center">
           <div class="section-title text-center">
             <h2>PhotoComp Team</h2>
             <p>Meet Our telented Team Member</p>
           </div>
         </div>
+      <div class="row">
+        
         <!--== Single Team Item ==-->
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
           <div class="single-team">
-            <div class="team-img">
-              <img src="images/hancy.jpg" alt="" class="img-responsive">
+            <div class="team-img ">
+              <img src="images/hancy.jpg" alt="" class="img-responsive img-fluid">
             </div>
             <div class="team-content">
               <div class="team-info">
@@ -312,7 +319,7 @@
           </div>
         </div>
         <!--== Single Team Item ==-->
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
           <div class="single-team">
             <div class="team-img">
               <img src="images/saiko.jpg" alt="" class="img-responsive">
@@ -327,7 +334,7 @@
           </div>
         </div>
         <!--== Single Team Item ==-->
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
           <div class="single-team">
             <div class="team-img">
               <img src="images/prksh.jpg" alt="" class="img-responsive">
@@ -342,7 +349,7 @@
           </div>
         </div>
         <!--== Single Team Item ==-->
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
           <div class="single-team">
             <div class="team-img">
               <img src="images/javier.jpg" alt="" class="img-responsive">

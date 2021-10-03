@@ -86,18 +86,26 @@
         }
 
         /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
+        @media screen and (max-width: 700px) {
           span.psw {
             display: block;
             float: none;
+          }
+          .modal-content {
+            width: 100% !important; /* Could be more or less, depending on screen size */
+          }
+        }
+        @media screen and (max-width:1200px) and (min-width: 700px) {
+          .modal-content {
+            width: 60% !important;
           }
         }
     </style>
 </head>
 <body>
-    <div class="modal-content animate content  border-2 shadow-md " >
+    <div class="modal-content animate border-2 shadow-md " >
       <div class="title">
-        <a href="competitions/{{$competition->id}}/entries"><span class="close" title="Close Modal" >&times;</span></a>
+        <a href="{{route('home')}}"><span class="close" title="Close Modal" >&times;</span></a>
       </div>
       <div class="ml-20 mb-20 flex flex-wrap content-center">
         <form id = "fileupload" class="fileupload-form" action="/competitions/{{$competition->id}}/entries" method="post" enctype="multipart/form-data">

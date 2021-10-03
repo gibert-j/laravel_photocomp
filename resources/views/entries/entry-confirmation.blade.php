@@ -70,10 +70,40 @@
         }
 
         /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
+        @media screen and (max-width: 700px) {
           span.psw {
             display: block;
             float: none;
+          }
+          .modal-content{
+            width: 90%;
+            height: 550px;
+          }
+          .image{
+            width: 90%;
+            margin: 10px auto 0px auto;
+            height: 290px;
+            border: 1px solid black;
+
+          }
+          .image img{
+            object-fit: cover;
+            height: 290px;
+
+          }
+          .text{
+            width: 100%;
+            margin-left: 15px;
+            text-align: start;
+          }
+          .container{
+            width: 100%;
+          }
+
+        }
+        @media only screen and (max-width: 1200px) and (min-width: 700px){
+          .modal-content{
+            height: 650px !important;
           }
         }
   </style>
@@ -92,16 +122,19 @@
     <div class="image">
       <img src="{{ $entry->image_path }}" alt="image">
     </div>
-
+    
     <div class="text">
-        <li>
-          By confirming the submission you are accepting <br> <a href=""> Our terms and conditions.</a>
+      <li>
+        By confirming the submission you are accepting <br> <a href=""> Terms and conditions.</a>
+      </li>
     </div>
 
     <div class="container">
       <a href="{{route('home')}}" class="btn hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="myFunction()">Confirm</a>
-      <a href="{{route('home')}}" class="cnclbtn btn hover:bg-red-700 text-white font-bold py-2 px-4  rounded">Cancel</a>
+      <a href="{{route('home')}}" class="cnclbtn btn hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cancel</a>
     </div>
+
+    
   </div>
 <script>
 function myFunction() {

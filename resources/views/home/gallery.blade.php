@@ -6,44 +6,41 @@
   <meta charset="utf-8">
   <title></title>
   <style media="screen">
+    .text-secondary {
+      color: $secondary!important;
+    }
 
+    body {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
 
-  .text-secondary {
-    color: $secondary!important;
-  }
-
-  body {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .filters_wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    list-style: none;
-    margin: 0 auto 10px;
-    padding: 0;
-  }
-  .activity{
-    margin-top: 120px;
-  }
-  .box{
-    width: 100%;
-    display: flex;
-  }
-  .boxes{
-      width: 30%;
-      padding: 10px;
-      /* box-shadow: 5px 5px 20px -15px rgba(0, 0, 0, 0.8), -5px -5px 20px -15px rgba(0, 0, 0, 0.8); */
-      margin: 0 10px 45px 15px;
-      border: 1px solid;
-      text-align: center;
-  }
-      .boxes h4{
+    .filters_wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      list-style: none;
+      margin: 0 auto 10px;
+      padding: 0;
+    }
+    .activity{
+      margin-top: 120px;
+    }
+    .box{
+      width: 100%;
+      display: flex;
+    }
+    .boxes{
+        width: 30%;
+        padding: 10px;
+        box-shadow: 5px 5px 20px -15px rgba(0, 0, 0, 1), -5px -5px 20px -15px rgba(0, 0, 0, 1);
+        margin: 0 10px 45px 15px;
+        text-align: center;
+    }
+    .boxes h4{
       font-family: Bitter;
       margin: 10px 0;
       font-weight: 700;
@@ -53,8 +50,7 @@
       object-fit: cover;
       width: 100%;
     }
-
-</style>
+  </style>
 </head>
 <body>
   <div class="activity">
@@ -64,7 +60,7 @@
     </ul>
     <div class="box row m-auto  justify-content-center">
       @foreach($entries as $entry)
-        <div class="boxes rounded">
+        <div class="boxes col-12 col-md-6 col-lg-3 rounded">
         <img src="{{$entry->image_path}}" alt="category_Nature">
         <hr>
         <h4>By {{$entry->user->name}}</h4>
