@@ -302,7 +302,7 @@
           </div>
         </div>
       <div class="row">
-        
+
         <!--== Single Team Item ==-->
         <div class="col-md-3 col-sm-12 col-lg-3 col-12">
           <div class="single-team">
@@ -356,7 +356,7 @@
             </div>
             <div class="team-content">
               <div class="team-info">
-                <h3>Javier Gilbert</hh3>
+                <h3>Javier Gibert</hh3>
                   <p>Web Developer</p>
                 </div>
                 <!-- <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi, vel.</p> -->
