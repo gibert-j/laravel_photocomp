@@ -108,7 +108,7 @@ a.navbar-brand{
 
     /* Add padding to container elements */
     .container {
-      padding: 10px;
+  
     }
 
     /* Clear floats */
@@ -209,15 +209,15 @@ a.navbar-brand{
     .middle {
       padding: 15vh 0;
     }
-  
+
     .text h2 {
       width: 100%;
       font-family: Bree Serif;
       font-size: 35px;
     }
-  
+
   }
-  
+
   /*for mobile*/
   @media screen and (max-width:700px) {
     .middle {
@@ -227,5 +227,5 @@ a.navbar-brand{
       width: 100%;
       font-family: Bree Serif;
       font-size: 28px;
-    }  
+    }
   }

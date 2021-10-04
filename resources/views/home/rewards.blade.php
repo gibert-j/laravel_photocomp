@@ -192,20 +192,18 @@
   <div class="bodyPart">
     <div class="slideshow-container">
       <div class="mySlides fade">
-        <img src="images/nature.jpg" style="width:100%">
-        <div class="text">If you believe in yourself and have
-          dedication and pride - and never quit, <br> you'll be a winner.
-          The price of victory is high but so are the rewards.
+        <img src="images/light.jpg" style="width:100%">
+        <div class="text">YOU CAN SHARE WITH US WHAT YOU FAIL TO PUT INTO WORDS.
         </div>.
       </div>
       <div class="mySlides fade">
-        <img src="images/landscape.jpg" style="width:100%">
-        <div class="text">Connect with more photographer in the globe. </div>
+        <img src="images/cat.jpg" style="width:100%">
+        <div class="text">YOUR FIRST 1,000 PHOTOGRAPHS MAY BE WORST, BUT NEVER GIVE-UP</div>
       </div>
 
       <div class="mySlides fade">
-        <img src="images/birds.jpg" style="width:100%">
-        <div class="text">Start to show your photography skills and make career.</div>
+        <img src="images/stars.jpg" style="width:100%">
+        <div class="text">START YOUR JOURNEY WITH US</div>
       </div>
       <div style="text-align:center">
         <span class="dot"></span>
@@ -216,28 +214,17 @@
     <br>
     <div class="detail mt-5">
       <div class="title">
-        <h2>Upcoming Rewards</h2>
+        <h2>OUR WINNERS</h2>
       </div>
       <div class="reward jumbotron d-flex justify-content-between align-items-center">
         <div class="boxes">
           <img src="images/nature.jpg" alt="category_Nature">
+          <br>
+          <h5>Image name</h5>
           <hr>
-          <h4>Nature</h4>
-          <p>Judging by Manoj Rai.</p>
-        </div>
-        <div class="boxes">
-          <img src="images/nature.jpg" alt="category_Nature">
-          <hr>
-          <h4>Landscapes</h4>
-          <p>Judging by Manoj Rai.</p>
-          <p></p>
-        </div>
-        <div class="boxes">
-          <img src="images/nature.jpg" alt="category_Nature">
-          <hr>
-          <h4>Nature</h4>
-          <p>Judging by Manoj Rai.</p>
-          <p></p>
+          <h2>COMPETITION TILE</h2>
+          <h2>Winner name</h2>
+          <p>Congratultion .. </p>
         </div>
 
       </div>

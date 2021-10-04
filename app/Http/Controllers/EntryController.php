@@ -39,11 +39,12 @@ class EntryController extends Controller
      */
     public function store(Request $request, Competition $competition)
     {
-      // $entry = Entry::where('user_id',Auth::id())->where('competition_id', $request->get('competition_id') )->count();
+      //  $entryCount = Entry::where('user_id',Auth::id())->where('competition_id', $request->get('competition_id') )->count();
       //
-      // if ($entry > 0){
+      // if ($entryCount > 1){
       //   dd('you are a cheater');
-      // }
+      //   //return redirect()->back() ->with('alert', 'Sorry! You Cannot Upload Photo More Than 1');
+      //  }
 
       $request->validate
       ([

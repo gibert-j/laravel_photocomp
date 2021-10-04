@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
 <div class="container mt-32 ">
-  <div class="content-center px-32 ">
+  <div class="content-center ">
       <a class="btn btn-sm btn-outline-success" href="/competitions/create">Create New Competition</a>
      <br>
     @foreach($competitions as $competition)
     <br>
-     <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{ $competition->image_path }}">
+     <img class="bd-placeholder-img card-img-top" width="100%" height="125" src="{{ $competition->image_path }}">
        <h3>{{$competition->title}}</h3>
         <p>{{$competition->description}}</p>
         <h4>{{$competition->time_remaining}}</h4>

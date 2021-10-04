@@ -20,11 +20,12 @@
                 <h3>{{$competition->title}}</h3>
               </div>
               <p class="px-2">{{$competition->description}}</p>
-              <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-success">Participate Now</a>
+              <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-success">ENTER NOW</a>
             </div>
           </div>
         </div>
       @endforeach
     </div>
 </div>
+
 @endsection

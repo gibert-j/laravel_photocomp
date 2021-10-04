@@ -62,8 +62,10 @@
       @foreach($entries as $entry)
         <div class="boxes col-12 col-md-6 col-lg-3 rounded">
         <img src="{{$entry->image_path}}" alt="category_Nature">
+        <br>
+        <h6>Photo Name: {{$entry->name}}</h6>
         <hr>
-        <h4>By {{$entry->user->name}}</h4>
+        <h4>By: {{$entry->user->name}}</h4>
         <h6>Competition: {{$entry->competition->title}}</h6>
         </div>
         @endforeach
