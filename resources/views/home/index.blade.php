@@ -3,9 +3,9 @@
 <div class="middle">
   <div class="container m-auto">
     <div class="text">
-      <h2>Welcome To PhotoShoot Competition!</h2>
+      <h2>Welcome To PHOTO COMPETITION</h2>
       <div class="line"></div>
-      <h2>Participate now, Show your Photography Skills, Get Rewarded</h2>
+      <h2>Participate now, Show your Photograph, Get Rewarded</h2>
     </div>
   </div>
 </div>

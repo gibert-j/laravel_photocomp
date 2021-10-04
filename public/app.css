@@ -108,7 +108,7 @@ a.navbar-brand{
 
     /* Add padding to container elements */
     .container {
-  
+
     }
 
     /* Clear floats */
@@ -125,7 +125,7 @@ a.navbar-brand{
       }
     }
   .middle{
- background-image: url(images/bgImg.jpg);
+ background-image: url(images/black.jpg);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
