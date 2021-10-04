@@ -160,7 +160,7 @@
     width: 90%;
     line-height: 30px;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .detail-text h1 {
@@ -193,7 +193,7 @@
     <div class="slideshow-container">
       <div class="mySlides fade">
         <img src="images/light.jpg" style="width:100%">
-        <div class="text">YOU CAN SHARE WITH US WHAT YOU FAIL TO PUT INTO WORDS.
+        <div class="text">SHARE WITH US WHAT YOU FAIL TO PUT INTO WORDS
         </div>.
       </div>
       <div class="mySlides fade">
