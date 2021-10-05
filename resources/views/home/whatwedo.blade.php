@@ -77,7 +77,7 @@
 .boxes a{
 
  display: block;
- font-family: sans-serif;
+ font-family: 'Monda', sans-serif;
  font-size: 15px;
 }
 .boxes h4{

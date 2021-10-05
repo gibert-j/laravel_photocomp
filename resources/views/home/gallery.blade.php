@@ -61,7 +61,7 @@
       <form class="filter btn btn-light active" action="/gallery" method="get">
         <h4>Select Competition To See Entries</h4>
 
-        <select class="category" name="competition_id" onchange="this.form.submit()">
+        <select class="category shadow-lg border-2 shadow-inner" name="competition_id" onchange="this.form.submit()">
           @foreach($competitions as $competition)
           <option value="{{$competition->id}}" {{ $competition->id == $selected_category ? 'selected':'' }} >{{$competition->title}}</option>
           @endforeach

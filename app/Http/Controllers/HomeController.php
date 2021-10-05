@@ -11,9 +11,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-
-      $competitions=Competition::all();
-      // dd($competitions);
+      $competitions=Competition::where('end_time','>',now())->get();
       return view('home/index', ['competitions'=>$competitions]);
     }
 
@@ -80,6 +78,7 @@ class HomeController extends Controller
 
 
     public function rewards(){
+        // $winnerimg = DB::table('entry')->select('image_path')->where('name')->get();
         return view('home/rewards');
     }
 

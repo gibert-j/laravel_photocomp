@@ -17,4 +17,11 @@ class Competition extends Model
     {
       return $this->hasMany(Entry::class);
     }
+
+    public function getHoursToGoAttribute()
+    {
+      $start = \Carbon\Carbon::createFromFormat('Y-m-d H:s:i', $this->start_time);
+      $end =   \Carbon\Carbon::createFromFormat('Y-m-d H:s:i', $this->end_time);
+      return $start->diffInHours($end, false);
+    }
 }

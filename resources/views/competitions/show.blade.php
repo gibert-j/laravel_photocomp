@@ -9,7 +9,7 @@
       <title>Document</title>
       <style>
       /* body {
-         background-color: rgba(210, 210, 210, 0.8);
+         background-color: rgba(210, 210, 210, 0.9);
          } */
         .content{
           width: 100%;
@@ -32,7 +32,7 @@
           transform: translate(-50%, -50%);
           color: black;
           z-index: 2;
-          background: rgba(210, 210, 210, 0.7);
+          background: rgba(210, 210, 210, 1);
           border-radius: 5px;
           text-align: center;
         }
@@ -99,7 +99,7 @@
             <div class="col-12 px-2 mt-10 ">
               <div class="judge pl-2">
                 <div class="h">
-                  <h4 class="text-capitalize">{{$competition->time_remaining}}</h4>
+                  <h4 class="text-capitalize"> CLOSING IN {{$competition->hours_to_go}} HOURS</h4>
                   <h6>Judge <a href="#">Manoj Rai</a></h6>
                 </div>
                 <div class="button" >

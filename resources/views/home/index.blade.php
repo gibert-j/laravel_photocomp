@@ -1,5 +1,47 @@
+
 @extends('layouts.app')
 @section('content')
+<style media="screen">
+.box{
+ width: 100%;
+ display: flex;
+ margin: auto;
+}
+.boxes{
+ width: 30%;
+ padding: 10px;
+ box-shadow: 5px 5px 20px -15px rgba(0, 0, 0, 0.8), -5px -5px 20px -15px rgba(0, 0, 0, 0.8);
+ margin: 0 10px 45px 15px;
+}
+.boxes a{
+ display: block;
+ font-family: sans-serif;
+ font-size: 16px;
+ text-align: center;
+}
+.boxes h3{
+ font-family: 'Monda', sans-serif;
+ margin: 10px 0;
+ font-weight: 600;
+ font-size: 20px;
+ text-align: center;
+ text-transform: capitalize;
+}
+.boxes img{
+ height: 250px;
+ object-fit: cover;
+ width: 100%;
+}
+.boxes p{
+ font-family: 'Monda', sans-serif;
+ font-size: 15px;
+ text-align: center;
+ height: 80px;
+
+
+}
+</style>
+<hr><br>
 <div class="middle">
   <div class="container m-auto">
     <div class="text">
@@ -9,25 +51,22 @@
     </div>
   </div>
 </div>
-<br><hr><br>
-<div class="entries">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      @foreach($competitions as $competition)
-        <div class="col pb-5">
-          <div class="card mb-3 ">
-            <div class="carousel-item active ">
-              <img class="bd-placeholder-img card-img" src="{{$competition->image_path}}">
-              <div class="caption pl-3 justify-content-centre">
-                <br>
-                <h3>{{$competition->title}}</h3>
-              </div>
-              <p class="px-2">{{$competition->description}}</p>
-            </div>
 
-          </div>
-          <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-success w-1/2">ENTER NOW</a>
-        </div>
-      @endforeach
-    </div>
-</div>
+<div class="box row m-auto justify-content-center">
+  @foreach($competitions as $competition)
+  <div class="boxes col-12 col-md-6 col-lg-3 rounded">
+      <img class="bd-placeholder-img card-img" src="{{$competition->image_path}}">
+        <h3>{{$competition->title}}</h3>
+    <hr>
+    <p class="px-2">{{$competition->description}}</p>
+    <div class="carousel-item active">
+    <h6 class="px-4"> <b> CLOSING IN {{$competition->hours_to_go}} HOURS </b></h6>
+    <br>
+    <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-succes">ENTER NOW</a>
+   </div>
+    <br>
+   </div>
+       @endforeach
+   </div>
+
 @endsection

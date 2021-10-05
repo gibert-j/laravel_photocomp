@@ -112,7 +112,8 @@
         <form id = "fileupload" class="fileupload-form" action="/competitions/{{$competition->id}}/entries" method="post" enctype="multipart/form-data">
           @csrf
           <div class="upload">
-            <label for="file"><h6>Choose a Photo for Compatition:</h6></label>
+            <label for="file"><h6>Choose a Photo for Competition</h6></label>
+            <br>
             <input type="file" name="image" id="image" required>
           </div>
           <br>
@@ -136,12 +137,12 @@
 </body>
 </html>
 
-
      @if ($errors->any())
   <div class="alert alert-danger">
     <ul>
       @foreach ($errors->all() as $error)
       <li>{{ $error }}</li>
+      <p>Image should be jpg, jpeg and png and size should be no more than 10mb</p>
       @endforeach
     </ul>
   </div>

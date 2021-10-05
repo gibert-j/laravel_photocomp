@@ -136,19 +136,7 @@
     }
   }
 
-  .detail .reward {
-    width: 100%;
-    margin: 5% auto;
-  }
 
-  .image {
-
-
-  }
-
-  .image img {
-    width: 100%
-  }
 
   .detail-text {
     width: 60%;
@@ -212,22 +200,22 @@
       </div>
     </div>
     <br>
-    <div class="detail mt-5">
-      <div class="title">
-        <h2>OUR WINNERS</h2>
-      </div>
-      <div class="reward jumbotron d-flex justify-content-between align-items-center">
-        <div class="boxes">
-          <img src="images/nature.jpg" alt="category_Nature">
-          <br>
-          <h5>Image name</h5>
-          <hr>
-          <h2>COMPETITION TITLE</h2>
-          <h2>Winner name</h2>
-          <p>Congratultion .. </p>
-        </div>
+
+  <!-- <div class="detail mt-5">
+    <div class="title">
+      <h2>OUR WINNERS</h2>
+    </div>
+    <div class="box row m-auto  justify-content-center">
+      <div class="boxes col-12 col-md-6 col-lg-3 rounded">
+        <img src="" alt="category_Nature">
+        <br>
+        <h5>COMPETITION TITLE</h5>
+        <h2>Winner name</h2>
+        <p>Congratultion .. </p>
       </div>
     </div>
+    </div> -->
+ <br>
     <div class="booking jumbotron text-center">
       <h1>Participate now for amazing rewards</h1>
       <p class="w-50 m-auto">Register now & be the part of PhotoComp & join the <br> "Global Photography Competition"
@@ -235,7 +223,6 @@
       <form action="{{ route('register') }}">
         <button class="btn btn-primary px-4 py-1 mt-4">Register now</button>
       </form>
-
     </div>
   </div>
 

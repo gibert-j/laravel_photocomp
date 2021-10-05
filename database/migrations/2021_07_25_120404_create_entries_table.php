@@ -17,6 +17,7 @@ class CreateEntriesTable extends Migration
               $table->id();
               $table->string('name');
               $table->string('image_path');
+              $table->integer('place')->default(0);
               $table->foreignId('user_id')->constrained();
               $table->foreignId('competition_id')->constrained();
               $table->timestamps();
