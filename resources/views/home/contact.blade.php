@@ -52,7 +52,7 @@
         }
 
         .left{
-          background: url("https://cdn.pixabay.com/photo/2017/11/17/09/37/businessman-2956974_960_720.jpg") no-repeat center;
+          background: url("https://cdn.pixabay.com/photo/2015/01/25/21/02/phone-612061_960_720.jpg") no-repeat center;
           background-size: cover;
           height: 100%;
         }
@@ -136,14 +136,17 @@
       <div class="container">
         <div class="contact-box">
           <div class="left"></div>
-          <div class="right">
+            <div class="right">
+          <form class=" action=""{{ route('whatwedo') }}" method="GET">
             <h2>Contact Us</h2>
-            <input type="text" class="field" placeholder="Your Name">
-            <input type="text" class="field" placeholder="Your Email">
-            <input type="text" class="field" placeholder="Phone">
-            <textarea placeholder="Message" class="field"></textarea>
-              <a href="{{ route('contact') }}" class="btn" data-filter="all">Submit</a>
+            <input type="text" class="field form-control" placeholder="Your Name" required>
+            <input type="text" class="field form-control" placeholder="Your Email" required>
+            <input type="text" class="field form-control" placeholder="Phone" required>
+            <textarea placeholder="Message" class="field form-control" required></textarea>
 
+            <button type="submit" name="button" class="btn">Submit</button>
+
+          </form>
           </div>
         </div>
       </div>

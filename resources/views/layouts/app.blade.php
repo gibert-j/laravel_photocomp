@@ -37,43 +37,43 @@
           <ul class="navbar-nav ml-auto">
             @if (Auth::check())
             @if(Auth::user()->admin)
-             <a href="/competitions" class="btn  btn-success">Organise Competitions</a>
+             <a href="/competitions" class="btn  btn-success">ORGANISE COMPETITION</a>
              @endif
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('home') }}">Photo Contest</a>
+              <a class="nav-link" href="{{ route('home') }}">PHOTO CONTEST</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('about') }}">About Us</a>
+              <a class="nav-link" href="{{ route('about') }}">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
+              <a class="nav-link" href="{{ route('gallery') }}">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('rewards') }}">Rewards</a>
+              <a class="nav-link" href="{{ route('rewards') }}">REWARDS</a>
             </li>
             <li class="nav-item">
               <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
-              document.getElementById('logout-form').submit();">Log Out</a>
+              document.getElementById('logout-form').submit();">LOGOUT</a>
             </li>
             @else
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('home') }}">Photo Contest</a>
+              <a class="nav-link" href="{{ route('home') }}">PHOTO CONTEST</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('about') }}">About Us</a>
+              <a class="nav-link" href="{{ route('about') }}">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
+              <a class="nav-link" href="{{ route('gallery') }}">GALLERY</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="{{ route('rewards') }}">View Rewards</a>
-            </li> -->
             <li class="nav-item">
-              <a href="{{ route('login') }}" class="nav-link">Login</a>
+              <a class="nav-link" href="{{ route('rewards') }}">REWARDS</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ route('login') }}" class="nav-link">LOGIN</a>
             </li>
             @if (Route::has('register'))
             <li class="nav-item">
-              <a href="{{ route('register') }}" class="nav-link">Sign Up</a>
+              <a href="{{ route('register') }}" class="nav-link">SIGNUP</a>
             </li>
             @endif
             @endif

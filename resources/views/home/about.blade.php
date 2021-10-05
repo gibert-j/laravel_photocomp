@@ -15,11 +15,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Monda', sans-serif;
   }
   body{
     font-family: 'Playfair Display', serif;
     display: grid;
-    background-color: #f4f4f4;
+    background-color: linear-gradient(#bdc3c7, #2c3e50);
     align-content: center;
     min-height: 100vh;
   }
@@ -121,8 +122,9 @@
       width: 100%;
     }
     .image{
+      margin-top:50%;
       object-fit: cover;
-      /* height: 100vh; */
+
     }
     .content{
       height: 100vh;
@@ -149,15 +151,8 @@
     .icons li i{
       font-size: 15px;
     }
-    .single-team{
-      height: 100%!important;
-    }
   }
-    @media only screen and (max-width: 1200px) and (min-width: 700px){
-      .single-team{
-        height: 300px !important;
-      }
-    }
+
   @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
   @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
   @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
@@ -178,13 +173,13 @@
     z-index: 1;
     overflow: hidden;
     box-shadow:5px 5px 15px #000;
-    height: 400px;
   }
 
   .team-img{
     position: relative;
     z-index: 5;
     overflow: hidden;
+    height: 300px;
   }
   .team-img img{
     width: 100%;
@@ -203,7 +198,7 @@
     bottom: 0;
     transition: all .4s;
     background: black;
-    z-index:5;
+    z-index:3;
   }
   .single-team:hover .team-content{
     height: 150px;
@@ -258,10 +253,8 @@
   <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <br><br><br><br>
   <section>
-
-    <div class = "image">
+    <div class = "image my-52">
       <img src=" images/logo.png" >
     </div>
     <div class = "content">
@@ -279,47 +272,47 @@
       </ul>
       <ul class = "icons">
         <li>
-          <i class = "fa fa-twitter"></i>
+
+          <a href="https://www.youtube.com/channel/UCPWZRlSULOWNmWrtHVd43NA" class = "fa fa-youtube"> </a>
         </li>
         <li>
-          <i class = "fa fa-facebook"></i>
+
+          <a href="https://www.facebook.com/PhotoComp-105658778549141 " class = "fa fa-facebook"> </a>
+
         </li>
+
         <li>
-          <i class = "fa fa-github"></i>
-        </li>
-        <li>
-          <i class = "fa fa-instagram"></i>
+
+          <a href="https://www.instagram.com/photocomp8989/ " class = "fa fa-instagram"> </a>
         </li>
       </ul>
     </div>
   </section>
   <div class="team-area">
     <div class="container">
-      <div class="txt-center">
+      <div class="row">
+        <div class="col-md-12">
           <div class="section-title text-center">
-            <h2>PhotoComp Team</h2>
-            <p>Meet Our telented Team Member</p>
+            <h2>JUDGES</h2>
+            <p>Meet Our Talented Judges</p>
           </div>
         </div>
-      <div class="row">
-
         <!--== Single Team Item ==-->
-        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
+        <div class="col-md-3">
           <div class="single-team">
-            <div class="team-img ">
-              <img src="images/hancy.jpg" alt="" class="img-responsive img-fluid">
+            <div class="team-img">
+              <img src="images/hancy.jpg" alt="" class="img-responsive">
             </div>
             <div class="team-content">
               <div class="team-info">
                 <h3>Manoj Rai</h3>
-                <p>Backend Developer</p>
               </div>
               <!-- <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi, vel.</p> -->
             </div>
           </div>
         </div>
         <!--== Single Team Item ==-->
-        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
+        <div class="col-md-3">
           <div class="single-team">
             <div class="team-img">
               <img src="images/saiko.jpg" alt="" class="img-responsive">
@@ -327,14 +320,13 @@
             <div class="team-content">
               <div class="team-info">
                 <h3>Sanjeev Bardewa</h3>
-                <p>Frontend Developer</p>
               </div>
               <!-- <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi, vel.</p> -->
             </div>
           </div>
         </div>
         <!--== Single Team Item ==-->
-        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
+        <div class="col-md-3">
           <div class="single-team">
             <div class="team-img">
               <img src="images/prksh.jpg" alt="" class="img-responsive">
@@ -342,22 +334,20 @@
             <div class="team-content">
               <div class="team-info">
                 <h3>Prakash Tamang</h3>
-                <p>Designer</p>
               </div>
               <!-- <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi, vel.</p> -->
             </div>
           </div>
         </div>
         <!--== Single Team Item ==-->
-        <div class="col-md-3 col-sm-12 col-lg-3 col-12">
+        <div class="col-md-3">
           <div class="single-team">
             <div class="team-img">
               <img src="images/javier.jpg" alt="" class="img-responsive">
             </div>
             <div class="team-content">
               <div class="team-info">
-                <h3>Javier Gibert</hh3>
-                  <p>Web Developer</p>
+                <h3>Javier Gilbert</hh3>
                 </div>
                 <!-- <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quasi, vel.</p> -->
               </div>

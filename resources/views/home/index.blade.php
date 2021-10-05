@@ -3,7 +3,7 @@
 <div class="middle">
   <div class="container m-auto">
     <div class="text">
-      <h2>Welcome To PHOTO COMPETITION</h2>
+      <h2>Welcome To Photo Competition</h2>
       <div class="line"></div>
       <h2>Participate now, Show your Photograph, Get Rewarded</h2>
     </div>
@@ -17,15 +17,20 @@
             <div class="carousel-item active ">
               <img class="bd-placeholder-img card-img" src="{{$competition->image_path}}">
               <div class="caption pl-3 justify-content-centre">
+                <br>
                 <h3>{{$competition->title}}</h3>
               </div>
               <p class="px-2">{{$competition->description}}</p>
+              <br>
               <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-success">ENTER NOW</a>
+              <br>
             </div>
           </div>
         </div>
       @endforeach
     </div>
 </div>
+
+
 
 @endsection

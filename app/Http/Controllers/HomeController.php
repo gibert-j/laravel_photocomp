@@ -54,13 +54,21 @@ class HomeController extends Controller
         return redirect("login")->withSuccess('Login details are not valid');
     }
 
-    public function gallery()
+    public function gallery(Request $request)
     {
+       // dd($request);
+        if (null !== $request->input('competition_id')) {
+          $selected_category = $request->get('competition_id');
+          $entry=Entry::where('competition_id','=',$request->get('competition_id'))->get();
+        }
+        else {
+          $entry=Entry::all();
+          $selected_category = " ";
+        }
 
-        $entry=Entry::all();
         $competitions=Competition::all();
 
-        return view('home/gallery', ['entries'=>$entry, 'competitions'=>$competitions]);
+        return view('home/gallery', ['entries'=>$entry, 'competitions'=>$competitions, 'selected_category'=>$selected_category]);
       }
 
       public function contact(){

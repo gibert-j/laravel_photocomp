@@ -121,7 +121,7 @@
 
   @keyframes fade {
     from {
-      opacity: .4
+      opacity: .3
     }
 
     to {
@@ -137,13 +137,13 @@
   }
 
   .detail .reward {
-    width: 80%;
-    margin: 40px auto;
+    width: 100%;
+    margin: 5% auto;
   }
 
   .image {
-    width: 40%;
-    margin-right: 10px;
+
+
   }
 
   .image img {
@@ -168,7 +168,7 @@
     font-weight: 700;
   }
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:100%) {
     .detail .jumbotron {
       display: flex !important;
       flex-direction: column;
@@ -182,7 +182,7 @@
 
     .detail .jumbotron .detail-text {
       width: 100%;
-      order: 2;
+
 
     }
   }
@@ -222,11 +222,10 @@
           <br>
           <h5>Image name</h5>
           <hr>
-          <h2>COMPETITION TILE</h2>
+          <h2>COMPETITION TITLE</h2>
           <h2>Winner name</h2>
           <p>Congratultion .. </p>
         </div>
-
       </div>
     </div>
     <div class="booking jumbotron text-center">
