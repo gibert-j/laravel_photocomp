@@ -10,6 +10,17 @@
           background-color: #F5F5F5;
           overflow: hidden;
         }
+        .backgroundTop{
+          background-image: url(images/bgImg.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          position: relative;
+          height: 800px;
+          padding: 25vh 0px;
+          margin-top: 105px;
+          z-index: 1;
+        }
+
         /* Full-width input fields */
         input[type=text], input[type=password] {
           width: 100%;
@@ -24,7 +35,7 @@
         .button1 {
           background-color: #04AA6D;
           color: white;
-          padding: 14px 20px;
+          padding: 5px 18px;
           margin: 8px 0;
           border: none;
           cursor: pointer;
@@ -37,16 +48,17 @@
 
         /* Extra styles for the cancel button */
         .cancelbtn {
-          width: auto;
-          padding: 10px 18px;
+          width: 100%;
+          padding: 5px 18px;
           background-color: #f44336;
+          margin-bottom: 5px;
         }
 
         /* Center the image and position the close button */
         .img1container h3{
           text-align: center;
           font-size: 28px;
-          font-family: Baloo;
+          font-family: 'Monda';
           margin: 24px 0 12px 0;
           position: relative;
           color: black;
@@ -57,12 +69,8 @@
           border-radius: 50%;
         }
 
-        .container {
-          padding: 10px;
-        }
-
-        span.psw {
-          float: right;
+        .extra{
+          text-align: center;
           padding-top: 16px;
         }
 
@@ -154,65 +162,57 @@
       </style>
     </head>
     <body>
-      <div class="middle">
-        <div class="container m-auto">
-          <div class="text">
-            <h2>Welcome To PhotoShoot Competition!</h2>
-            <div class="line"></div>
-            <h2>Participate now, Show your Photography Skills, Get Rewarded</h2>
+      <div class="backgroundTop"> </div>
+
+      <div id="id02" class="form">
+        <form class="modal-content animate" action="{{ route('login') }}" method="POST">
+        @csrf
+          <div class="img1container">
+            <a href="{{ route('home')}}"><span class="close" title="Close Modal" >&times;</span></a>
+            <h3 class="justify-content-centre">Login</h3>
           </div>
-        </div>
-      </div>
 
-  <div id="id02" class="form">
-    <form class="modal-content animate" action="{{ route('login') }}" method="POST">
-    @csrf
-      <div class="img1container">
-        <a href="{{ route('home')}}"><span class="close" title="Close Modal" >&times;</span></a>
-        <h3 class="justify-content-centre">Photo Comp</h3>
-      </div>
+          <div class="container">
+            <label for="name"><b>Email</b></label>
+            <input name="email" type="text" class="form-control w-full " placeholder="Email *" value="" required>
+            @if ($errors->has('email'))
+              <span class="text-danger">{{ $errors->first('email') }}</span>
+            @endif
 
-      <div class="container">
-        <label for="name"><b>Email</b></label>
-        <input name="email" type="text" class="form-control w-full " placeholder="Email *" value="" required>
-        @if ($errors->has('email'))
-          <span class="text-danger">{{ $errors->first('email') }}</span>
-        @endif
+            <br> <br>
+            <label for="psw"><b>Password</b></label>
+            <input  name="password" type="password" class="form-control w-full" placeholder="Password *" value="" required>
+            @if ($errors->has('password'))
+              <span class="text-danger">{{ $errors->first('password') }}</span>
+            @endif
 
-        <br> <br>
-        <label for="psw"><b>Password</b></label>
-        <input  name="password" type="password" class="form-control w-full" placeholder="Your Password *" value="" required>
-        @if ($errors->has('password'))
-          <span class="text-danger">{{ $errors->first('password') }}</span>
-        @endif
+            <br> <br>
+            <button class="button1 rounded" value="Login" type="submit">Login</button>
 
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
 
-        <button class="button1" value="Login" type="submit">Login</button>
-
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn rounded">Cancel</button>
-        <span class="psw"><a href="#">Forgot password?</a></span>
-      </div>
-    </form>
-</div>
+            <a href="{{ route('home') }}"><button type="button" class="cancelbtn rounded text-white">Cancel</button></a>
+            <div class="extra">
+              <a href="{{route('register')}}"><p> Don't have a account? Create a new account</p></a>
+            </div>
+          </div>
+        </form>
+    </div>
 
 
-     <script>
-      // Get the modal
-      var form = document.getElementById('id02');
+      <script>
+        // Get the modal
+        var form = document.getElementById('id02');
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == form) {
-              modal.style.display = "none";
-          }
-      }
-    </script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == form) {
+                modal.style.display = "none";
+            }
+        }
+      </script>
     </body>
   </html>
 @endsection

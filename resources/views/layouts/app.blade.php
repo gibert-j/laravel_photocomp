@@ -25,7 +25,7 @@
       <nav class="navbar navbar-expand-lg">
         <!-- Brand -->
         <div class="logo">
-          <a class="navbar-brand" href="{{ route('home') }}"><img src="images/logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="{{ route('home') }}"><img src="/images/logo.png" alt="logo"></a>
         </div>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler bg-primary navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
