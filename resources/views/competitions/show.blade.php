@@ -8,6 +8,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
       <style>
+      /* body {
+         background-color: rgba(210, 210, 210, 0.8);
+         } */
         .content{
           width: 100%;
           padding-bottom: 200px;
@@ -29,14 +32,14 @@
           transform: translate(-50%, -50%);
           color: black;
           z-index: 2;
-          background: rgba(210, 210, 210, 0.9);
+          background: rgba(210, 210, 210, 0.7);
           border-radius: 5px;
           text-align: center;
         }
         h4{
           font-family: 'Monda';
         }
-        
+
         @media screen and (max-width:500px){
           .content::before {
             height: 45%;
@@ -71,23 +74,13 @@
           }
         }
 
-        @media screen and (min-width:700px) and (max-width:1024px) {
-          .content::before{
-            bottom: -50%;
-            height: 25%;
-          }
-
-          .box{
-            bottom: 42%;
-            left: 55%;  
-          }
 
           .content img{
             height: 500px;
           }
 
-        }       
-        
+        }
+
       </style>
     </head>
     <body>

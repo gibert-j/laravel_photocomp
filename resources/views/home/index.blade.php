@@ -9,8 +9,9 @@
     </div>
   </div>
 </div>
+<br><hr><br>
 <div class="entries">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       @foreach($competitions as $competition)
         <div class="col pb-5">
           <div class="card mb-3 ">
@@ -21,16 +22,12 @@
                 <h3>{{$competition->title}}</h3>
               </div>
               <p class="px-2">{{$competition->description}}</p>
-              <br>
-              <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-success">ENTER NOW</a>
-              <br>
             </div>
+
           </div>
+          <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-success w-1/2">ENTER NOW</a>
         </div>
       @endforeach
     </div>
 </div>
-
-
-
 @endsection

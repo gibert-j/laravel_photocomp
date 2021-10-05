@@ -195,7 +195,7 @@
 
             <a href="{{ route('home') }}"><button type="button" class="cancelbtn rounded text-white">Cancel</button></a>
             <div class="extra">
-              <a href="{{route('register')}}"><p> Don't have a account? Create a new account</p></a>
+              <a href="{{route('register')}}"><p> Don't have an account? Create a new account</p></a>
             </div>
           </div>
         </form>

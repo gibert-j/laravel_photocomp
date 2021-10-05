@@ -13,7 +13,7 @@
       }
       /* Modal Content/Box */
       .modal-content {
-        margin: 10% auto 0px auto; /* 5% from the top, 15% from the bottom and centered */
+        margin: 12% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
         border: 1px solid #888;
         width: 30%; /* Could be more or less, depending on screen size */
         height: 450px; /*Could be more or less, depending on screen size */
@@ -23,7 +23,7 @@
         height: 250px;
       }
       .title{
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom:10px;
         text-align: center;
       }
@@ -103,15 +103,16 @@
     </style>
 </head>
 <body>
+  <br><br><br><br>
     <div class="modal-content animate border-2 shadow-md " >
-      <div class="title">
+      <div class="title ">
         <a href="{{route('home')}}"><span class="close" title="Close Modal" >&times;</span></a>
       </div>
-      <div class="ml-20 mb-20 flex flex-wrap content-center">
+      <div class="ml-5 mb-20 flex flex-wrap content-center">
         <form id = "fileupload" class="fileupload-form" action="/competitions/{{$competition->id}}/entries" method="post" enctype="multipart/form-data">
           @csrf
           <div class="upload">
-            <label for="file"><h6>Choose a Photo to participate:</h6></label>
+            <label for="file"><h6>Choose a Photo for Compatition:</h6></label>
             <input type="file" name="image" id="image" required>
           </div>
           <br>

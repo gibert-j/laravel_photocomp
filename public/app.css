@@ -22,8 +22,8 @@
 .nav-link{
    font-family: 'Monda', sans-serif;
     margin: 0 10px;
-    font-size: 14px;
-    font-weight: 150;
+    font-size: 13px;
+    font-weight: 100;
     color: white;
 }
 .nav-link:hover{
@@ -172,13 +172,15 @@ a.navbar-brand{
 
 /* index page */
 .entries{
-  width:70%;
-  display: flex;
+  width: 95%;
+  display: block;
   margin: auto;
   margin-top: 20px;
 }
+
 .card{
-  height: auto;
+  height: 480px;
+  box-shadow: 5px 5px 20px -15px rgba(0, 0, 0, 0.8), -5px -5px 20px -15px rgba(0, 0, 0, 0.8);
 }
 .carousel-item{
   width: 50%;
@@ -190,10 +192,9 @@ a.navbar-brand{
 }
 .caption{
   text-align: center;
-
 }
 
-.carousel-item a{
+.entries a{
   background: #000;
   font-family: sans-serif;
   width: 50%;
