@@ -20,7 +20,7 @@ class CreateCompetitionsTable extends Migration
             $table->text('description');
             $table->text('time_remaining');
             $table->dateTime('start_time')->default(now());
-            $table->text('end_time')->default(now());
+            $table->dateTime('end_time')->default(now()->addhours(2));
             $table->timestamps();
         });
     }
