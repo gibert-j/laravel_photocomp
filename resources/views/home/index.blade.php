@@ -37,8 +37,6 @@
  font-size: 15px;
  text-align: center;
  height: 80px;
-
-
 }
 </style>
 <hr><br>

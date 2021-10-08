@@ -88,7 +88,7 @@ class EntryController extends Controller
      */
     public function edit(Competition $competition, Entry $entry)
     {
-        //
+
     }
 
     /**
@@ -100,7 +100,7 @@ class EntryController extends Controller
      */
     public function update(Request $request, Entry $entry)
     {
-        //
+
     }
 
     /**
@@ -109,9 +109,9 @@ class EntryController extends Controller
      * @param  \App\Models\Entry  $entry
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Entry $entry)
+    public function destroy(Competition $competition, Entry $entry )
     {
       $entry->delete();
-      return redirect('entrys');
+      return redirect('/');
     }
 }

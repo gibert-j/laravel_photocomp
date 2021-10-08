@@ -114,6 +114,8 @@
 </html>
 
  <div class="modal-content animate " >
+
+
     <div class="title">
       <h3>Confirm Submission.</h3>
       <h6>Are you sure you want to enter below photo for the competition?</h6>
@@ -122,7 +124,7 @@
     <div class="image">
       <img src="{{ $entry->image_path }}" alt="image">
     </div>
-    
+
     <div class="text">
       <li>
         By confirming the submission you are accepting <br> <a href=""> Terms and conditions.</a>
@@ -130,11 +132,14 @@
     </div>
 
     <div class="container">
-      <a href="{{route('home')}}" class="btn hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="myFunction()">Confirm</a>
-      <a href="{{route('home')}}" class="cnclbtn btn hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Cancel</a>
+      <form action="/competitions/{{$entry->competition->id}}/entries/{{$entry->id}}" method="POST">
+            @method('DELETE')
+            @csrf
+           <a href="{{route('home')}}" class="btn hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="myFunction()">Confirm</a>
+            <a href="{{route('home')}}" type="submit" class="cnclbtn btn hover:bg-red-700 text-white font-bold mb-10 py-2 px-4 rounded">Cancel</a>
+       </form>
     </div>
 
-    
   </div>
 <script>
 function myFunction() {

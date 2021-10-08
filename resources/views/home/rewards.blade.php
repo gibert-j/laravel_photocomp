@@ -201,20 +201,20 @@
     </div>
     <br>
 
-  <!-- <div class="detail mt-5">
+  <div class="detail mt-5">
     <div class="title">
-      <h2>OUR WINNERS</h2>
+      <h2>WINNER of Photograph SIT Queenstown Campus</h2>
     </div>
     <div class="box row m-auto  justify-content-center">
       <div class="boxes col-12 col-md-6 col-lg-3 rounded">
-        <img src="" alt="category_Nature">
+        <img src="images/sitview.jpg" alt="category_Nature">
         <br>
-        <h5>COMPETITION TITLE</h5>
-        <h2>Winner name</h2>
-        <p>Congratultion .. </p>
+        <h5>Photograph SIT Queenstown Campus</h5>
+        <h2>a</h2>
+        <p>Congratultion you are the winner. yey!</p>
       </div>
     </div>
-    </div> -->
+    </div>
  <br>
     <div class="booking jumbotron text-center">
       <h1>Participate now for amazing rewards</h1>

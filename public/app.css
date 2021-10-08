@@ -125,13 +125,13 @@ a.navbar-brand{
       }
     }
   .middle{
- background-image: url(images/black.jpg);
+ background-image: url(images/cam.jpg);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
  position: relative;
  padding: 25vh 0px;
- margin-top: 105px;
+
  text-align: center;
  z-index: 1;
 }
