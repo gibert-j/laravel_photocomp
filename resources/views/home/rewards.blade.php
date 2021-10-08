@@ -201,7 +201,7 @@
     </div>
     <br>
 
-  <div class="detail mt-5">
+  <!-- <div class="detail mt-5">
     <div class="title">
       <h2>WINNER of Photograph SIT Queenstown Campus</h2>
     </div>
@@ -214,7 +214,7 @@
         <p>Congratultion you are the winner. yey!</p>
       </div>
     </div>
-    </div>
+    </div> -->
  <br>
     <div class="booking jumbotron text-center">
       <h1>Participate now for amazing rewards</h1>
