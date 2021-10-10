@@ -7,6 +7,7 @@
  display: flex;
  margin: auto;
 }
+
 .boxes{
  width: 30%;
  padding: 10px;
@@ -14,6 +15,8 @@
  margin: 0 10px 45px 15px;
 }
 .boxes a{
+  padding-top: 4px;
+  padding-bottom: 4px;
  display: block;
  font-family: sans-serif;
  font-size: 16px;
@@ -60,7 +63,7 @@
     <div class="carousel-item active">
     <h6 class="px-4"> <b> CLOSING IN {{$competition->hours_to_go}} HOURS </b></h6>
     <br>
-    <a href="{{ url('competitions/'.$competition->id) }}" class="btn btn-succes">ENTER NOW</a>
+    <a href="{{ url('competitions/'.$competition->id) }}" class="btn-success">ENTER NOW</a>
    </div>
     <br>
    </div>

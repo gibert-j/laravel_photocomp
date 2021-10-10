@@ -136,7 +136,7 @@
             @method('DELETE')
             @csrf
            <a href="{{route('home')}}" class="btn hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="myFunction()">Confirm</a>
-            <a href="{{route('home')}}" type="submit" class="cnclbtn btn hover:bg-red-700 text-white font-bold mb-10 py-2 px-4 rounded">Cancel</a>
+           <button type="submit" name="cancel" class="cnclbtn btn hover:bg-red-700 text-white font-bold mb-10 py-2 px-4 rounded">Cancel</button>
        </form>
     </div>
 

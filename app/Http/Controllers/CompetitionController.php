@@ -64,7 +64,7 @@ class CompetitionController extends Controller
            "image_path" => "/competitionCardPhotos/" . $imageName,
            "title" => $request->get('title'),
            "description" =>  $request->get('description'),
-           "time_remaining" =>  $request->get('time_remaining'),
+           "end_time" =>  $request->get('closing_time'),
            "user_id" =>  Auth::id()
          ]);
          $competition->save();

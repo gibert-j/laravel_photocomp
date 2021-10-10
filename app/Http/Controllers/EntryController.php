@@ -48,8 +48,8 @@ class EntryController extends Controller
 
       $request->validate
       ([
-          'name' => 'required|string|max:15',
-          'image' => 'required|image||mimes:jpeg,png,jpg|max:10000',
+          'name' => 'required|string|max:20',
+          'image' => 'required|image||mimes:jpeg,png,jpg,bmp, gif,webp,image|max:100000|dimensions:max_width=9000,max_height=9000,svg',
 
       ]);
 

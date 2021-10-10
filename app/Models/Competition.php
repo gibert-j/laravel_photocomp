@@ -10,7 +10,7 @@ class Competition extends Model
     use HasFactory;
     protected $fillable =
    [
-     "image_path", "title", "description", "time_remaining"
+     "image_path", "title", "description", "end_time"
    ];
 
    public function entry()

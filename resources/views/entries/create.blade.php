@@ -8,6 +8,9 @@
   <title>Upload</title>
 
     <style>
+    *{
+      font-family: 'Monda', sans-serif;
+    }
       body {
         background-color: #E6E6FA;
       }
@@ -140,7 +143,7 @@
     <ul>
       @foreach ($errors->all() as $error)
       <li>{{ $error }}</li>
-      <p>Image should be jpg, jpeg and png and size should be no more than 10mb</p>
+      <!-- <p>Image should be jpg, jpeg and png and size should be no more than 10mb</p> -->
       @endforeach
     </ul>
   </div>

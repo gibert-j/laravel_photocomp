@@ -9,8 +9,14 @@
             @csrf
             <div class="row ">
               <div class="form-group col-6">
-                <label for="Title">Time Remaining</label>
-                <input type="text" class="form-control" id="time_remaining" name="time_remaining" value="{{$competition->end_time}}" required>
+                <label for="Title">Change Title</label>
+                <input type="text" class="form-control" id="title" name="title" value="{{$competition->title}}" >
+                <br>
+                <label for="Title">Change Description</label>
+                <input type="textarea" class="form-control" id="description" name="description" value="{{$competition->description}}" >
+                <br>
+                <label for="Title">Change Closing Time</label>
+                <input type="datetime" class="form-control" id="closing_time" name="closing_time" value="{{$competition->end_time}}">
               </div>
             </div>
             <br>
