@@ -49,7 +49,7 @@ class EntryController extends Controller
       $request->validate
       ([
           'name' => 'required|string|max:20',
-          'image' => 'required|image||mimes:jpeg,png,jpg,bmp, gif,webp,image|max:100000|dimensions:max_width=9000,max_height=9000,svg',
+          'image' => 'required|image||mimes:jpeg,png,jpg,bmp,webp|max:100000',
 
       ]);
 
@@ -88,7 +88,9 @@ class EntryController extends Controller
      */
     public function edit(Competition $competition, Entry $entry)
     {
-
+        $entry->place = 1;
+        $entry->save();
+        return redirect('/gallery');
     }
 
     /**

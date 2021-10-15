@@ -45,6 +45,9 @@
     margin: 10px 0;
     font-weight: 700;
   }
+  .boxes h6{
+
+  }
   .boxes img{
     height: 250px;
     object-fit: cover;
@@ -73,12 +76,23 @@
     <div class="box row m-auto  justify-content-center">
       @foreach($entries as $entry)
       <div class="boxes col-12 col-md-6 col-lg-3 rounded">
-        <img src="{{$entry->image_path}}" alt="category_Nature">
-        <br>
+        <img src="{{$entry->image_path}}" >
+         <br>
+        @if ($entry->place == 1)
+          <h3 class="text-pink-700 font-extrabold">Winner</h3>
+          <h6 class="text-pink-900">Congratulation {{$entry->user->name}}, you have won the competition</h6>
+        @endif
+
         <h6>Photo Name: {{$entry->name}}</h6>
         <hr>
         <h4>By: {{$entry->user->name}}</h4>
         <h6>Competition: {{$entry->competition->title}}</h6>
+
+        @if (Auth::check())
+        @if(Auth::user()->admin)
+         <a href="competitions/1/entries/{{$entry->id}}/edit" class="btn  btn-success">Select {{$entry->user->name}} as a winner</a>
+         @endif
+         @endif
       </div>
       @endforeach
     </div>

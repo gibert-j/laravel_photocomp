@@ -97,8 +97,7 @@
         <h4>PhotoComp </h4>
         <a href="">> Location: Queenstown, NewZealand</a> <br>
         <a href="">> copyright&copy 2021, PhotoComp</a> <br>
-        <a href="">> Privacy Policy</a> <br>
-        <a href="">> Our Terms and Condition</a>
+        <a href="/policy">> Privacy Policy</a> <br>
       </div>
       <div class="col-lg-4 col-md-4 col-12 text-white">
         <h4>Main Menu</h4>
@@ -109,7 +108,7 @@
       </div>
       <div class="col-lg-4 col-md-4 col-12 text-white">
         <h4>Contact Us</h4>
-        <a href="mailto:leopardrai13@gmail.com"> > photo@comp.ac.nz</a> <br>
+        <a href="mailto:leopardrai13@gmail.com">photocomp.org@gmail.com</a> <br>
         <a href=""> > Facebook</a> <br>
         <a href=""> > Instagram</a> <br>
         <a href=""> > Twitter</a> <br>

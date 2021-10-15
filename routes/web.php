@@ -28,6 +28,8 @@ Route::get('/gallery', 'App\Http\Controllers\HomeController@gallery') ->name('ga
 Route::get('/contact', 'App\Http\Controllers\HomeController@contact') ->name('contact');
 Route::get('/whatwedo', 'App\Http\Controllers\HomeController@whatweDo') ->name('whatwedo');
 
+Route::get('/policy', 'App\Http\Controllers\HomeController@policy') ->name('policy');
+
 Route::resource('competitions.entries', EntryController::class)->middleware('auth');
 
 Route::resource('competitions', CompetitionController::class)->except(['show'])->middleware(['auth', 'verified']);
