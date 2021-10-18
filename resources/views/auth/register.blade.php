@@ -19,10 +19,10 @@
                     background-repeat: no-repeat;
                     /* background-size: cover; */
                     position: relative;
-                    height: 900px;
                     padding: 25vh 0px;
-                    margin-top: 105px;
+                    margin-top: 87px;
                     z-index: 1;
+                    height: 900px;
                 }
 
                 /* Full-width input fields */
@@ -162,6 +162,9 @@
                 .modal-content {
                     width: 80%;
                 }
+                }
+                .footer{
+                    display: none;
                 }
             </style>
         </head>

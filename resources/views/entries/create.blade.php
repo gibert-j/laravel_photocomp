@@ -16,7 +16,7 @@
       }
       /* Modal Content/Box */
       .modal-content {
-        margin: 12% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+        margin: 2% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
         border: 1px solid #888;
         width: 30%; /* Could be more or less, depending on screen size */
         height: 450px; /*Could be more or less, depending on screen size */
@@ -109,6 +109,7 @@
   <br><br><br><br>
     <div class="modal-content animate border-2 shadow-md " >
       <div class="title ">
+        <h3>Participation-Form</h3>
         <a href="{{route('home')}}"><span class="close" title="Close Modal" >&times;</span></a>
       </div>
       <div class="ml-5 mb-20 flex flex-wrap content-center">
@@ -139,7 +140,7 @@
 </html>
 
      @if ($errors->any())
-  <div class="alert alert-danger">
+  <div class="modal-content alert alert-danger">
     <ul>
       @foreach ($errors->all() as $error)
       <li>{{ $error }}</li>

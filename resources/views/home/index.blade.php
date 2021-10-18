@@ -5,7 +5,7 @@
 .box{
  width: 100%;
  display: flex;
- margin: auto;
+ margin: 15px auto auto auto;
 }
 
 .boxes{
@@ -48,7 +48,7 @@
     <div class="text">
       <h2>Welcome To Photo Competition</h2>
       <div class="line"></div>
-      <h2>Participate now, Show your Photograph, Get Rewarded</h2>
+      <h2>Participate Now, Show Your Photograph, Get Rewarded</h2>
     </div>
   </div>
 </div>
@@ -66,8 +66,8 @@
     <a href="{{ url('competitions/'.$competition->id) }}" class="btn-success">ENTER NOW</a>
    </div>
     <br>
-   </div>
+  </div>
        @endforeach
-   </div>
+</div>
 
 @endsection

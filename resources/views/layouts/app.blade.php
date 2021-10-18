@@ -95,23 +95,23 @@
     <div class="foot py-5">
       <div class="col-md-4 col-md-4 col-12 text-white">
         <h4>PhotoComp </h4>
-        <a href="">> Location: Queenstown, NewZealand</a> <br>
-        <a href="">> copyright&copy 2021, PhotoComp</a> <br>
+        <a href="">> Queenstown, NewZealand</a> <br>
+        <a href="">> © 2021 PhotoComp, NZ</a> <br>
         <a href="/policy">> Privacy Policy</a> <br>
       </div>
       <div class="col-lg-4 col-md-4 col-12 text-white">
         <h4>Main Menu</h4>
         <a href="/"> > Home</a> <br>
         <a href="/about"> > About us</a> <br>
-        <a href="/gallery"> > Our Gallery</a> <br>
-        <a href="/rewards"> > View Rewards</a>
+        <a href="/gallery"> > Gallery</a> <br>
+        <a href="/rewards"> > Rewards</a>
       </div>
       <div class="col-lg-4 col-md-4 col-12 text-white">
         <h4>Contact Us</h4>
-        <a href="mailto:leopardrai13@gmail.com">photocomp.org@gmail.com</a> <br>
-        <a href=""> > Facebook</a> <br>
-        <a href=""> > Instagram</a> <br>
-        <a href=""> > Twitter</a> <br>
+        <a href="mailto:photocomp87@gmail.com"> > photocomp87@gmail.com</a> <br>
+        <a href="https://www.facebook.com/PhotoComp-105658778549141"> > Facebook</a> <br>
+        <a href="https://www.instagram.com/photocomp8989/"> > Instagram</a> <br>
+        <a href="https://www.youtube.com/channel/UCPWZRlSULOWNmWrtHVd43NA"> > Youtube</a> <br>
       </div>
     </div>
   </div>

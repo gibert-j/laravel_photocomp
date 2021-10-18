@@ -31,7 +31,7 @@
   .slideshow-container {
     width: 100%;
     position: relative;
-    margin-top: 110px;
+    margin-top: 87px;
     text-align: center;
     background-color: #f2f2f2;
     background-position: center;

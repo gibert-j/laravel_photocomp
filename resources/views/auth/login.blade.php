@@ -17,7 +17,7 @@
           position: relative;
           height: 800px;
           padding: 25vh 0px;
-          margin-top: 105px;
+          margin-top: 87px;
           z-index: 1;
         }
 
@@ -202,17 +202,7 @@
     </div>
 
 
-      <script>
-        // Get the modal
-        var form = document.getElementById('id02');
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == form) {
-                modal.style.display = "none";
-            }
-        }
-      </script>
     </body>
   </html>
 @endsection
