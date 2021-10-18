@@ -113,7 +113,8 @@ class EntryController extends Controller
      */
     public function destroy(Competition $competition, Entry $entry )
     {
-      $entry->delete();
-      return redirect('/');
+      $entry->place = 0;
+      $entry->save();
+      return redirect('/gallery');
     }
 }

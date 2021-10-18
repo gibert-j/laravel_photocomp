@@ -69,9 +69,7 @@ class HomeController extends Controller
         return view('home/gallery', ['entries'=>$entry, 'competitions'=>$competitions, 'selected_category'=>$selected_category]);
       }
 
-      public function contact(){
-      return view('home/contact');
-      }
+    
       public function WhatWeDo(){
       return view('home/whatwedo');
       }

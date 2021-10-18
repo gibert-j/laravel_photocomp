@@ -95,8 +95,7 @@
     <div class="foot py-5">
       <div class="col-md-4 col-md-4 col-12 text-white">
         <h4>PhotoComp </h4>
-        <a href="">> Queenstown, NewZealand</a> <br>
-        <a href="">> © 2021 PhotoComp, NZ</a> <br>
+        <a href="/policy">> Terms and Conditions</a> <br>
         <a href="/policy">> Privacy Policy</a> <br>
       </div>
       <div class="col-lg-4 col-md-4 col-12 text-white">
@@ -108,11 +107,13 @@
       </div>
       <div class="col-lg-4 col-md-4 col-12 text-white">
         <h4>Contact Us</h4>
-        <a href="mailto:photocomp87@gmail.com"> > photocomp87@gmail.com</a> <br>
-        <a href="https://www.facebook.com/PhotoComp-105658778549141"> > Facebook</a> <br>
-        <a href="https://www.instagram.com/photocomp8989/"> > Instagram</a> <br>
-        <a href="https://www.youtube.com/channel/UCPWZRlSULOWNmWrtHVd43NA"> > Youtube</a> <br>
+        <a href="/contacts/create"> > Say Something</a> <br>
+        <a href="https://www.facebook.com/PhotoComp-105658778549141" target="_blank" > > Facebook</a> <br>
+        <a href="https://www.instagram.com/photocomp8989/" target="_blank"> > Instagram</a> <br>
+        <a href="https://www.youtube.com/channel/UCPWZRlSULOWNmWrtHVd43NA" target="_blank"> > Youtube</a> <br>
       </div>
+
+       © 2021 photocomp, NZ
     </div>
   </div>
 </footer>

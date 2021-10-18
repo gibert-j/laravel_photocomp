@@ -90,7 +90,13 @@
 
         @if (Auth::check())
         @if(Auth::user()->admin)
-         <a href="competitions/1/entries/{{$entry->id}}/edit" class="btn  btn-success">Select {{$entry->user->name}} as a winner</a>
+         <a href="competitions/{{$competition->id}}/entries/{{$entry->id}}/edit" class="btn  btn-success">Select {{$entry->user->name}} as a winner</a>
+            <br><br>
+        <form class="" action="competitions/{{$competition->id}}/entries/{{$entry->id}}" method="post">
+        @method('DELETE')
+         @csrf
+         <button type="submit" class="btn  btn-success" name="button">Remove Winner</button>
+       </form>
          @endif
          @endif
       </div>

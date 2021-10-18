@@ -65,7 +65,7 @@ class CompetitionController extends Controller
            "title" => $request->get('title'),
            "description" =>  $request->get('description'),
            "end_time" =>  $request->get('closing_time'),
-           "user_id" =>  Auth::id()
+           "user_id" =>  Auth::id(),
          ]);
          $competition->save();
          return redirect('competitions');

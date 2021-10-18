@@ -268,22 +268,22 @@
       <ul class = "links">
         <li><a href = "{{ route('whatwedo') }}">What we do</a></li>
         <div class = "vertical-line"></div>
-        <li><a href = "{{ route('contact') }}">Contact us</a></li>
+        <li><a href = "/contacts/create">Contact us</a></li>
       </ul>
       <ul class = "icons">
         <li>
 
-          <a href="https://www.youtube.com/channel/UCPWZRlSULOWNmWrtHVd43NA" class = "fa fa-youtube"> </a>
+          <a href="https://www.youtube.com/channel/UCPWZRlSULOWNmWrtHVd43NA " target="_blank" class = "fa fa-youtube"> </a>
         </li>
         <li>
 
-          <a href="https://www.facebook.com/PhotoComp-105658778549141 " class = "fa fa-facebook"> </a>
+          <a href="https://www.facebook.com/PhotoComp-105658778549141 " target="_blank" class = "fa fa-facebook"> </a>
 
         </li>
 
         <li>
 
-          <a href="https://www.instagram.com/photocomp8989/ " class = "fa fa-instagram"> </a>
+          <a href="https://www.instagram.com/photocomp8989/ " target="_blank" class = "fa fa-instagram"> </a>
         </li>
       </ul>
     </div>
