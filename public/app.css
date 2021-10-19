@@ -128,7 +128,6 @@ button:hover {
   text-align: center;
   z-index: 1;
   margin-top: 30px;
-  opacity: 0.8;
 }
 .middle::before{
   width: 100%;

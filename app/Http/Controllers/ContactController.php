@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Gate;
+use Mail;
 
 
 class ContactController extends Controller
@@ -19,8 +20,9 @@ class ContactController extends Controller
       if (! Gate::allows('admin')) {
       abort(403);
      }
-        $contacts = Contact::all();
-        return view('contact/messages',['contacts'=> $contacts]);
+
+      //  dd($contacts);
+        return view('contact/view-messages', ['contacts'=>Contact::all()]);
     }
 
     /**
@@ -41,7 +43,7 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-    //  dd($request);
+    // dd($request);
       $request->validate
       ([
           'name' => 'required|string|max:20',
@@ -62,6 +64,20 @@ class ContactController extends Controller
        ]);
 
       $contact->save();
+
+      \Mail::send('contact/messages',
+             array(
+                 'name' => $request->get('name'),
+                 'email' => $request->get('email'),
+                 'phone_number' => $request->get('phone_number'),
+                 'subject' => $request->get('subject'),
+                 'user_message' => $request->get('message'),
+             ), function($message) use ($request)
+               {
+                  $message->from($request->email);
+                  $message->to('leopardrai13@gmail.com')->subject($request->get('subject'));
+               });
+
        return redirect('/');
 
     }

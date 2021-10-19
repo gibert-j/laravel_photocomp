@@ -96,7 +96,7 @@
       <div class="col-md-4 col-md-4 col-12 text-white">
         <h4>PhotoComp </h4>
         <a href="/policy">> Terms and Conditions</a> <br>
-        <a href="/policy">> Privacy Policy</a> <br>
+        
       </div>
       <div class="col-lg-4 col-md-4 col-12 text-white">
         <h4>Main Menu</h4>
